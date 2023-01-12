@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* navigation bar */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 15px;
+    background-color: #262626;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header .logo img {
+    line-height: 50px;
+    width: 160px;
+    float: left;
+    margin-top: 8px;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    line-height: 85px;
+    padding: 0 15px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11pt;
+    text-decoration: none;
+    display: block;
+}
+
+/* make nav links active */
+header ul li.active a {
+    color: goldenrod;
+}
+
+header ul li a:hover {
+    color: goldenrod;
+    transition: .5s;
+}
+
+.menu-toggle {
+    color: white;
+    float: right;
+    line-height: 85px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-toggle i {
+    font-size: 30px;
+    margin-top: .8em;
+}
+
+.menu-toggle:hover {
+    color: goldenrod;
+}
+
+/* styling the title */
+#title {
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+#title h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18pt;
+    text-align: center;
+}
+
+/* footer */
+footer {
+    height: 60px;
+}
+
+footer p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+    padding: 20px;
+    text-align: center;
+}
+
+/* flex container */
+.flex-container {
+    display: flex;
+    background-color: whitesmoke;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.flex-container > div {
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+}
+
+.book img {
+    width: 150px;
+}
+
+/* edit ande delete button */
+.edit-btn, .del-btn {
+    background: none;
+    border: 2px solid goldenrod;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 5px 8px;
+    color: black;
+    margin-left: 1.2em;
+    margin-bottom: .5em;
+    margin-top: .4em;
+    width: 130px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+    color: goldenrod;
+}
+
+/* styling the book content */
+.book h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 11pt;
+    padding-top: .3em;
+    padding-bottom: .3em;
+}
+
+.book h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 11pt;
+    padding-top: .3em;
+    padding-bottom: .3em;
+}
+
+.book p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 11pt;
+    padding-top: .3em;
+    padding-bottom: .3em;
+}
+
+.divider {
+    border-top: 1px solid black;
+    margin-top: 1.8em;
+    width: 90%;
+    margin-left: 3em;
+    opacity: 15%;
+}
+
+/* styling the log info */
+.log-info {
+    margin-top: 7.8em;
+    margin-left: 3.2em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11pt;
+}
+
+/* mobile view */
+@media (max-width: 600px) {
+    header {
+        padding: 0 20px;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background-color: #333;
+        top: 85px;
+        left: -100%;
+        transition: 0.5s;
+    }
+    header nav.active {
+        left: 0;
+    }
+    header .logo img {
+        width: 140px;
+        margin-top: 10px;
+    }
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+    header nav ul li a {
+        border-bottom: 1px solid darkgray;
+    }
+    .log-info {
+        text-align: center;
+        margin-left: 0em;
+    }
+    .divider {
+        margin-left: 1.6em;
+    }
+}

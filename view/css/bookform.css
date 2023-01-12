@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.bookform-container {
+    background-color: whitesmoke;
+    margin-top: 8em;
+}
+
+.book-heading h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18pt;
+    display: inline-block;
+    padding-top: 1em;
+}
+
+.book-heading > i {
+    font-size: 25px;
+    padding: 10px;
+    color: goldenrod;
+}
+
+.author-heading h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18pt;
+    display: inline-block;
+    padding-top: 1em;
+}
+
+.author-heading > i {
+    font-size: 25px;
+    padding: 10px;
+    color: goldenrod;
+}
+
+.author-heading, .book-heading {
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+/* styling the form */
+label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    display: block;
+    padding-top: .5em;
+    padding-bottom: .4em;
+}
+
+.formfield {
+    margin-left: .8em;
+}
+
+/* styling form input */
+input[type=text] {
+    padding: 8px 2px;
+    width: 300px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid grey;
+}
+
+input[type=submit] {
+    padding: 8px 10px;
+    width: 300px;
+    margin-left: 2em;
+    margin-bottom: 1.8em;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    color: black;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+    color: goldenrod;
+}
+
+/* two layout column */
+.grid-col {
+    display: grid;
+    padding: 1rem;
+    margin: 1rem;
+    grid-template-columns: auto auto;
+    grid-row-gap: 1rem;
+    grid-column-gap: 1rem;
+}
+
+legend {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2em;
+    margin-left: .6em;
+    font-weight: bold;
+    color: goldenrod;
+}
+
+.delform {
+    margin-top: 2.5em;
+    margin-left: 3.8em;
+}
+
+.delinput {
+    margin-top: 2em;
+    margin-left: 1.7em;
+}
+
+.bookform-container > h3 {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 3.3em;
+    padding-top: 2em;
+}
+
+.bookform-container > legend {
+    margin-left: 4em;
+    padding-top: 2em;
+}
+
+/* mobile view */
+@media (max-width: 600px) {
+    label {
+        display: none;
+        margin-top: 2em;
+    }
+    .grid-col {
+        grid-template-columns: auto;
+    }
+    .bookform-container h2 {
+        text-align: center;
+        padding-left: 0em;
+    }
+    .bookform-container h3 {
+        text-align: center;
+        padding-top: 0em;
+        padding-left: 0em;
+    }
+    .bookform-container {
+        text-align: center;
+    }
+    input[type=submit] {
+        margin-left: 0em;
+        margin-bottom: 1.8em;
+    }
+    .formfield {
+        margin-top: .6em;
+        margin-left: 0em;
+    }
+    .author-heading, .book-heading {
+        margin-left: 0em;
+        margin-top: 1em;
+    }
+    .book-heading h2, .author-heading h3 {
+        text-align: center;
+    }
+}

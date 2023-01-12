@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#logo {
+    text-align: center;
+    padding: 10px;
+}
+
+#logo img {
+    width: 200px;
+    margin-top: 1em;
+}
+
+#form-container {
+    border: 3px solid lightgray;
+    height: 340px;
+    width: 300px;
+    border-radius: 8px;
+    padding: 1.8em;
+    margin: 0 auto;
+    position: relative;
+    top: 14px;
+}
+
+#logform h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25pt;
+}
+
+#logform p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 11pt;
+    padding-top: 5px;
+}
+
+/* styling input form field */
+label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 11pt;
+    display: block;
+    padding-top: 2em;
+    padding-bottom: 5px;
+}
+
+input[type=text] {
+    padding: 8px 10px;
+    width: 250px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid grey;
+}
+
+.form-icon input[type=text] {
+    padding-left: 30px;
+}
+
+.form-icon {
+    position: relative;
+}
+
+.form-icon i {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    padding: 3.1em .0em;
+}
+
+/* error message input */
+.error {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+    color: red;
+}
+
+.hide {
+    display: none;
+}
+
+/* submit and reset button */
+input[type=submit] {
+    padding: 8px 10px;
+    width: 290px;
+    margin-top: 1.5em;
+    margin-right: 1em;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    color: white;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+    color: white;
+}
+
+.reg-info {
+    padding-top: .6em;
+}
+
+.reg-info p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+    color: grey;
+    margin-left: 4.5em;
+    padding-bottom: 4px;
+}
+
+.signup-btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 11pt;
+    font-weight: bold;
+    margin-left: 7.8em;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.signup-btn:hover {
+    color: goldenrod;
+}
+
+/* mobile view */
+@media (max-width:600px) {
+    #logo img {
+        width: 200px;
+    }
+    #form-container {
+        margin-left: 3em;
+    }
+    #form-container h1 {
+        font-size: 20pt;
+    }
+    label {
+        display: none;
+    }
+    input[type=text] {
+        margin-top: 3em;
+    }
+    .form-icon i {
+        padding: 2.5em .0em; 
+    }
+}
